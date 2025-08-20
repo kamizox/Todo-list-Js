@@ -11,10 +11,16 @@ function addTodo(){
 function showlist()
 {
     var listItems = document.getElementById("todo-list")
+    listItems.innerHTML = "";
     for(var i=0; i<Todos.length; i++)
     {
-        listItems.innerHTML = '<li> html </li>'
-    }
-    
-    
+        listItems.innerHTML += `<li> ${Todos[i]} <button onclick="delet(${i})">delet</button> </li>`
+    } 
+}
+showlist();
+
+function delet(delitm)
+{
+     Todos.splice(delitm,1);
+     showlist();
 }
