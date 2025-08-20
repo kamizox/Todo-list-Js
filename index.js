@@ -1,14 +1,14 @@
 
 var Todos = [];
-var editValue = -1;
+var editInd = -1;
 function addTodo(){
 
     var inputElement = document.getElementById("inputTask")
     var value = inputElement.value.trim();
-    inputElement.value = "";
+    
     if(value === ""){return}
 
-    if(editValue == -1)
+    if(editInd == -1)
     {
         Todos.push(value);
     }else
@@ -26,7 +26,7 @@ function showlist()
     for(var i=0; i<Todos.length; i++)
     {
         listItems.innerHTML += `<li> ${Todos[i]}
-        <button onclick="update(${i})">Edit</button>  
+        <button onclick="updadt(${i})">Edit</button>  
         <button onclick="delet(${i})">delet</button> </li>`
     } 
 }
@@ -40,7 +40,8 @@ function delet(delitm)
 
 function updadt(ind)
 {
-    var inputElement = document.getElementById("inputask");
+    var inputElement = document.getElementById("inputTask");
     inputElement.value = Todos[ind];
-
+    editInd = ind;
+    inputElement.focus();
 }
