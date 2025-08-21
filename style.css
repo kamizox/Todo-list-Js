@@ -1,0 +1,103 @@
+body {
+    background-color: #F7F7F9;
+    display: flex;
+    justify-content: center;
+}
+
+.inputWraper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.todoo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.Ul_list {
+    display: flex;
+    width: 100%;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+.addbtn {
+    background-color: #1C352D;
+    color: white;
+    font-size: 25px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+#inputTask {
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border-radius: 8px;
+    background-color: #E8F0FE;
+    border: none;
+    color: white;
+    padding-left: 12px;
+}
+
+#inputTask::placeholder {
+    color: #969088;
+}
+
+.upbtn {
+    background-color: #7D8D86;
+    color: white;
+    font-size: 25px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+.delbtn {
+    background-color: #BCA88D;
+    color: white;
+    font-size: 25px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+
+#todo-list{
+
+  margin: 0;
+    padding: 0;
+}
+#todo-list li {
+    background-color: #ffb347;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    width: 450px;
+    height: 80px;
+    display: flex;
+    margin-left: 0;
+    position: relative;
+}
+
+.upspan{
+    position: absolute;
+    left: 410px;
+}
+
+.delspan{
+    position: absolute;
+    left: 350px;
+}
