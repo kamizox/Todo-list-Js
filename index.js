@@ -2,7 +2,7 @@ var Todos = [];
 var editInd = -1;
 
 function addTodo() {
-    var inputElement = document.getElementById("inputTask")
+    var inputElement = document.getElementById("inputTask");
     var value = inputElement.value.trim();
 
     if (value === "") {
