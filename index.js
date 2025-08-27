@@ -1,4 +1,4 @@
-var Todos = [];
+var Todos = JSON.parse(localStorage.getItem("todo")) || [];
 var editInd = -1;
 
 function addTodo() {
@@ -19,7 +19,8 @@ function addTodo() {
         Todos[editInd].text = value;
         editInd = -1;
     }
-
+    
+    localStorage.setItem("todo",JSON.stringify(Todos))
     inputElement.value = "";
     showlist();
 }
@@ -52,10 +53,12 @@ function showlist() {
            </span> 
         </li>`;
     }
+        localStorage.setItem("todo",JSON.stringify(Todos))
 }
 
 function delet(delitm) {
     Todos.splice(delitm, 1);
+        localStorage.setItem("todo",JSON.stringify(Todos))
     showlist();
 }
 
@@ -63,5 +66,8 @@ function updadt(ind) {
     var inputElement = document.getElementById("inputTask");
     inputElement.value = Todos[ind].text;
     editInd = ind;
+        localStorage.setItem("todo",JSON.stringify(Todos))
     inputElement.focus();
 }
+
+showlist()

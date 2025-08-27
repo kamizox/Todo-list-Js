@@ -5,14 +5,14 @@ body {
 }
 
 .M_Container {
-    background-color: #fff;   /* White box */
+    background-color: #fff;   
     padding: 20px;
-    border-radius: 12px;      /* Rounded corners */
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.15); /* Soft shadow */
-    width: 500px;             /* Fixed width */
-    min-height: 150px;        /* Starting height */
-    max-height: 600px;        /* Limit height */
-    overflow-y: auto;         /* Scroll when content exceeds */
+    border-radius: 12px;      
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15); 
+    width: 500px;             
+    min-height: 150px;        
+    max-height: 600px;        
+    overflow-y: auto;         
     margin-top: 40px;
 }
 
